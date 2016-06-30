@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,7 @@
  *= require_tree .
  *= require_self
  */
+header{padding-top:60px;}
+.article-title{width:20%;}
+.article-text{width:60%;}
+footer{background-color: #000000; color: #ffffff; padding-left: 40px; margin-top: 40px;}

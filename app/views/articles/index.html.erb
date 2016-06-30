@@ -8,14 +8,17 @@
     <th>Text</th>
     <th colspan="2"></th>
   </tr>
-
+  <div class="row">
   <% @articles.each do |article| %>
+    <div class="col-md-10">
     <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <td class="article-title"><%= article.title %></td>
+      <td class="article-text"><%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure???' } %></td>
     </tr>
+  </div>
     <% end %>
+  </div>
 </table>
